@@ -1,3 +1,72 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+body {
+    background-color:#4d4d4d;
+}
+
+.slider {
+    width: 40vh;
+    height: 40vh;
+    overflow: hidden;
+    border-radius: 2vh;
+    margin: auto;
+    transform: translateY(20%);
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    transform: translateX();
+}
+
+.dot {
+    width: 4vh;
+    height: 4vh;
+    margin: 2vh;
+    border-radius: 2vh;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.dot:hover {
+    background-color: rgb(135, 237, 255);
+}
+
+input[name="meme"] {
+    display: none;
+}
+
+.img {
+    width: 40vh;
+    height: 40vh;
+}
+
+.memes {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.meme {
+    width: 25%;
+    transition: all .5s ease-out;
+}
+
+#meme-1:checked ~ .slider-margin {
+    margin-left: 0;
+}
+
+#meme-2:checked ~ .slider-margin {
+    margin-left: -25%;
+}
+
+#meme-3:checked ~ .slider-margin {
+    margin-left: -50%;
+}
+
+#meme-4:checked ~ .slider-margin {
+    margin-left: -75%;
+}
