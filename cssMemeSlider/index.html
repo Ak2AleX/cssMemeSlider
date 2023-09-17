@@ -11,37 +11,59 @@
     <title>Meme Slider</title>
 </head>
 <body>
-    <div class="slider">
-        <div class="memes">
-            <input type="radio" name="meme" id="meme-1" checked>
-            <input type="radio" name="meme" id="meme-2">
-            <input type="radio" name="meme" id="meme-3">
-            <input type="radio" name="meme" id="meme-4">
-            <div class="meme slider-margin">
-                <img class="img" src="img/1.png" alt="eugen_meme">
-            </div>
-            <div class="meme">
-                <img class="img" src="img/2.png" alt="alex_meme">
-            </div>
-            <div class="meme">
-                <img class="img" src="img/3.png" alt="alex_sleep_meme">
-            </div>
-            <div class="meme">
-                <img class="img" src="img/5.jpeg" alt="nikita_meme">
+    <div class="wrapper">
+        <input type="radio" name="meme" id="meme-1" checked>
+        <input type="radio" name="meme" id="meme-2">
+        <input type="radio" name="meme" id="meme-3">
+        <input type="radio" name="meme" id="meme-4">
+        <div class="slider">
+            <div class="memes">
+                <div class="meme slider-margin">
+                    <img class="img" src="img/1.png" alt="eugen_meme">
+                </div>
+                <div class="meme">
+                    <img class="img" src="img/2.png" alt="alex_meme">
+                </div>
+                <div class="meme">
+                    <img class="img" src="img/3.png" alt="alex_sleep_meme">
+                </div>
+                <div class="meme">
+                    <img class="img" src="img/5.jpeg" alt="nikita_meme">
+                </div>
             </div>
         </div>
+        <div class="bottom__wrapper">
+            <div class="text__slider">
+                <div class="memes__text slider-margin">
+                    <div class="text__box">
+                        <p class="text">Проснись Женёк</p>
+                    </div>
+                    <div class="text__box">
+                        <p class="text">Алексей, за вами уже выехали</p>
+                    </div>
+                    <div class="text__box">
+                        <p class="text">Иди спать, Алексей</p>
+                    </div>
+                    <div class="text__box">
+                        <p class="text">А что если эти мемы создаёт Никита</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="navigation">
+                <label for="meme-1" class="dot" checked>
+                    <div class="checkbox"></div>
+                </label>
+                <label for="meme-2" class="dot">
+                    <div class="checkbox"></div>
+                </label>
+                <label for="meme-3" class="dot">
+                    <div class="checkbox"></div>
+                </label>
+                <label for="meme-4" class="dot">
+                    <div class="checkbox"></div>
+                </label>
+            </nav>
+        </div>
     </div>
-    <div class="text__slider">
-        <p>Проснись Женёк</p>
-        <p>Алексей, за вами уже выехали</p>
-        <p>Иди спать, Алексей</p>
-        <p>А что если эти мемы создаёт Никита</p>
-    </div>
-    <nav class="navigation">
-        <label for="meme-1" class="dot" checked></label>
-        <label for="meme-2" class="dot"></label>
-        <label for="meme-3" class="dot"></label>
-        <label for="meme-4" class="dot"></label>
-    </nav>
 </body>
 </html>
