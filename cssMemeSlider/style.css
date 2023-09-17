@@ -31,7 +31,7 @@ body {
 }
 
 .dot {
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .checkbox:hover {
@@ -120,6 +120,7 @@ input[name="meme"] {
     text-align: center;
     @media (max-width: 768px) {
         justify-content: center;
+        height: 18vh;
     }
 }
 
